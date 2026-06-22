@@ -1,0 +1,92 @@
+# ============================================
+# node-lab 公共 .gitignore
+# 合并自各子项目的忽略规则
+# ============================================
+
+# --- Dependencies ---
+node_modules/
+
+# --- Logs ---
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# --- Lock files ---
+package-lock.json
+yarn.lock
+*.lock
+
+# --- Test & coverage ---
+coverage/
+.nyc_output/
+
+# --- Build output ---
+dist/
+build/
+
+# --- Egg.js runtime ---
+run/
+
+# --- OS ---
+.DS_Store
+
+# --- IDE & editors ---
+.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.sw*
+*.swp
+*.un~
+*.sw?
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# --- Environment ---
+.env
+.env.local
+.env.*.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# --- Temp ---
+.temp
+.tmp
+
+# --- Runtime data ---
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# --- Diagnostic reports ---
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# --- Egg.js auto-generated typings ---
+typings/
+
+# --- server-egg-ts: TypeScript 编译产物 ---
+node_service/server/server-egg-ts/*.js
+!node_service/server/server-egg-ts/.autod.conf.js
+node_service/server/server-egg-ts/app/**/*.js
+node_service/server/server-egg-ts/test/**/*.js
+node_service/server/server-egg-ts/config/**/*.js
+node_service/server/server-egg-ts/app/**/*.map
+node_service/server/server-egg-ts/test/**/*.map
+node_service/server/server-egg-ts/config/**/*.map
+node_service/server/server-egg-ts/resource/*

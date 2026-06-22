@@ -1,0 +1,31 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "declaration": true,
+        "removeComments": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "allowSyntheticDefaultImports": true,
+        "target": "ES2021",
+        "sourceMap": true,
+        "outDir": "./dist",
+        "baseUrl": "./",
+        "incremental": true,
+        "skipLibCheck": true,
+        "strictNullChecks": false,
+        "noImplicitAny": false,
+        "strictBindCallApply": false,
+        "forceConsistentCasingInFileNames": false,
+        "noFallthroughCasesInSwitch": false,
+        /** typeRoots: 指定 TypeScript 查找类型定义文件的根目录 */
+        "typeRoots": [
+            "./types",
+            "./node_modules/@types"
+        ]
+    },
+    "include": [
+        "./types/*.d.ts",
+        "./types/*.ts",
+        "./**/*.ts"
+    ]
+}
